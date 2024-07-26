@@ -11,6 +11,44 @@ sender_password = os.environ['FROM_MAIL_PWD']
 # 创建 yagmail 客户端
 yag = yagmail.SMTP(sender_email, sender_password, host='smtp.qq.com', port=465)
 
+def create_html_table(names, institutes, deadlines, websites):
+    html = """
+   <html>
+    <body>
+    <table style="border-collapse: collapse;">
+        <tr>
+            <th style="border: 1px solid black;padding: 8px;text-align: left;">院校</th>
+            <th style="border: 1px solid black;padding: 8px;text-align: left;">截至时间</th>
+            <th style="border: 1px solid black;padding: 8px;text-align: left;">网址</th>
+        </tr>
+    """
+
+    for i, ddl in enumerate(deadlines):
+        if ddl == '':
+            ddl = 'N/A'
+        else:
+            try:
+                ddl_new = datetime.fromisoformat(ddl)
+                ddl = ddl_new.strftime('%Y-%m-%d %H:%M:%S')
+            except:
+                print(f'日期错误: {names[i]}-{institutes[i]} {ddl}')
+
+        html += f"""
+        <tr>
+            <td style="border: 1px solid black;padding: 8px;text-align: left;">{names[i]}-{institutes[i]}</td>
+            <td style="border: 1px solid black;padding: 8px;text-align: left;">{ddl}</td>
+            <td style="border: 1px solid black;padding: 8px;text-align: left;"><a href="{websites[i]}">{websites[i]}</a></td>
+        </tr>
+        """
+
+    html += """
+    </table>
+    </body>
+    </html>
+    """
+
+    return html
+
 # 获取最新的修改
 def get_latest_json_changes(file_path):
     # 执行 git diff 命令获取最新 commit 的变动
@@ -31,27 +69,11 @@ def get_latest_json_changes(file_path):
     websites = re.findall('"website": "(.*?)"', added_contents)
 
     # 生成结果
-    result = ''
-    for i,ddl in enumerate(deadlines):
-        if ddl == '':
-            ddl = 'N/A'
-        else:
-            try:
-                ddl_new = datetime.fromisoformat(ddl)
-                ddl_new = ddl_new.strftime('%Y-%m-%d %H:%M:%S')
-                ddl = ddl_new
-            except:
-                print(f'日期错误: {names[i]}-{institutes[i]} {ddl}')
-                pass
-        result += f'{names[i]}-{institutes[i]} {ddl} {websites[i]}\n'
-    print('\n\n', result)
+    result = create_html_table(names, institutes, deadlines, websites)
     return result
         
 
 if __name__ == '__main__':
-
-    import os
-    os.chdir('BoardCaster')
 
     content = get_latest_json_changes('data.json')
 
@@ -60,7 +82,7 @@ if __name__ == '__main__':
         yag.send(
             to="baitime@foxmail.com",
             subject="预推免院校新增",
-            contents=content,
+            contents=content.replace('\n','')
         )
         print("Email sent successfully!")
     except Exception as e:
