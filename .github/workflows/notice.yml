@@ -1,0 +1,39 @@
+name: Notice
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'  # 每15分钟运行一次
+  workflow_dispatch:  # 手动触发
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Listener repository
+      uses: actions/checkout@v2
+
+    - name: Clone BoardCaster repository
+      run: git clone https://github.com/CS-BAOYAN/BoardCaster.git
+
+    - name: Copy and rename data.json to current directory
+      run: |
+        cp BoardCaster/data.json data.json
+
+    - name: Commit and push changes if there are any
+      run: |
+        git config --global user.name 'github-actions'
+        git config --global user.email 'github-actions@github.com'
+        git add data.json
+        if git diff-index --quiet HEAD; then
+          echo "No changes to commit"
+        else
+          git commit -m "Update data.json from BoardCaster"
+          git push
+          pip install yagmail
+          python -u notice.py
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        FROM_MAIL: ${{ secrets.FROM_MAIL }}
+        FROM_MAIL_PWD: ${{ secrets.FROM_MAIL_PWD }}
