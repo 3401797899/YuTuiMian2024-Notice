@@ -14,11 +14,15 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Clone BoardCaster repository
-      run: git clone https://github.com/CS-BAOYAN/BoardCaster.git
+      run: |
+        git clone https://github.com/CS-BAOYAN/BoardCaster.git
+        git clone https://github.com/CS-BAOYAN/CSYuTuiMian2024.git
 
     - name: Copy and rename data.json to current directory
       run: |
         cp BoardCaster/data.json data.json
+        cp CSYuTuiMian2024/README.md README.md
+        pip install yagmail
 
     - name: Commit and push changes if there are any
       run: |
@@ -30,8 +34,15 @@ jobs:
         else
           git commit -m "Update data.json from BoardCaster"
           git push
-          pip install yagmail
           python -u notice.py
+        fi
+        git add README.md
+        if git diff-index --quiet HEAD; then
+          echo "No changes to commit"
+        else
+          git commit -m "Update README.md from CSYuTuiMian2024"
+          git push
+          python -u notice_readme.py
         fi
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

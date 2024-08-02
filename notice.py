@@ -50,7 +50,7 @@ def create_html_table(names, institutes, deadlines, websites):
     return html
 
 # 获取最新的修改
-def get_latest_json_changes(file_path):
+def get_added_content(file_path):
     # 执行 git diff 命令获取最新 commit 的变动
     result = subprocess.run(
         ['git', 'diff', 'HEAD~1..HEAD', '--', file_path],
@@ -62,7 +62,9 @@ def get_latest_json_changes(file_path):
     # 解析输出
     lines = result.stdout.split('\n')
     added_lines = [line[1:] for line in lines if line.startswith('+') and not line.startswith('+++')]
-    added_contents = ''.join(added_lines)
+    return ''.join(added_lines)
+    
+def generate_json_changes(added_contents):
     deadlines = re.findall('"deadline": "(.*?)"', added_contents)
     names = re.findall('"name": "(.*?)"', added_contents)
     institutes = re.findall('"institute": "(.*?)"', added_contents)
@@ -71,17 +73,25 @@ def get_latest_json_changes(file_path):
     # 生成结果
     result = create_html_table(names, institutes, deadlines, websites)
     return result
-        
+
+def generate_readme_changes(added_contents):
+    # 生成结果
+    result = re.findall('【报名截止：(.*?)】 \[(.*?)\]\((.*?)\)',added_contents)
+    print(result[0])
+    return result
 
 if __name__ == '__main__':
 
-    content = get_latest_json_changes('data.json')
+    json_content = get_added_content('data.json')
+    content = generate_json_changes(json_content)
+    readme_content = get_added_content('README.md')
+    generate_readme_changes(readme_content)
 
     # 发送邮件
     try:
         yag.send(
             to=["baitime@foxmail.com","1328273623@qq.com"],
-            subject="预推免院校新增",
+            subject="预推免院校新增 -- 来自BoardCaster数据库",
             contents=content.replace('\n','')
         )
         print("Email sent successfully!")
