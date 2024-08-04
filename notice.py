@@ -53,16 +53,30 @@ def create_html_table(names, institutes, deadlines, websites):
 def get_added_content(file_path):
     # 执行 git diff 命令获取最新 commit 的变动
     result = subprocess.run(
-        ['git', 'diff', 'HEAD~1..HEAD', '--', file_path],
+        ['git', 'diff', '-U0', 'HEAD~1..HEAD', '--', file_path],
         capture_output=True,
         text=True,
         check=True
     )
     
     # 解析输出
+    
     lines = result.stdout.split('\n')
-    added_lines = [line[1:] for line in lines if line.startswith('+') and not line.startswith('+++')]
-    return ''.join(added_lines)
+    i = 0
+    add_lines = ""
+    while i < len(lines):
+        line = lines[i]
+        i += 1
+        if line.startswith('@@'):
+            rep = re.search(r'@@ -(\d+),(\d+) \+(\d+),(\d+) @@', line).groups()
+            add_line_count = int(rep[1])
+            delete_line_count = int(rep[3])
+            if add_line_count == delete_line_count:
+                i += (add_line_count + delete_line_count)
+            continue
+        add_lines += line
+        
+    return add_lines
     
 def generate_json_changes(added_contents):
     deadlines = re.findall('"deadline": "(.*?)"', added_contents)
@@ -74,18 +88,10 @@ def generate_json_changes(added_contents):
     result = create_html_table(names, institutes, deadlines, websites)
     return result
 
-def generate_readme_changes(added_contents):
-    # 生成结果
-    result = re.findall('【报名截止：(.*?)】 \[(.*?)\]\((.*?)\)',added_contents)
-    print(result[0])
-    return result
-
 if __name__ == '__main__':
 
     json_content = get_added_content('data.json')
     content = generate_json_changes(json_content)
-    readme_content = get_added_content('README.md')
-    generate_readme_changes(readme_content)
 
     # 发送邮件
     try:
