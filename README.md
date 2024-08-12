@@ -29,7 +29,7 @@
 
 > [东南大学夏令营信息](https://yzb.seu.edu.cn/2024/0618/c6676a494353/pagem.htm)
 
-【报名截止：8.11 12:00】[电子科学与工程学院](https://electronic.seu.edu.cn/2024/0625/c11479a495398/page.htm)
+~~【报名截止：8.11 12:00】[电子科学与工程学院](https://electronic.seu.edu.cn/2024/0625/c11479a495398/page.htm)~~
 
 【报名截止：N/A】[东南大学PALM实验室](https://palm.seu.edu.cn/application.html)
 
@@ -55,15 +55,19 @@
 
 【报名截止：9.10】[工程师学院](https://pi.zju.edu.cn/2024/0808/c67026a2952040/page.htm)
 
+【报名截止：9.10】[软件学院](http://www.cst.zju.edu.cn/2024/0811/c32178a2952716/page.htm)
+
 ## 哈尔滨工业大学
 
 > [哈尔滨工业大学关于接收 2025年推免生（含直博生）工作安排的通知](http://yzb.hit.edu.cn/2024/0727/c8822a349360/page.htm)
 
 > [哈尔滨工业大学（威海）关于接收 2025年推免生（含直博生）工作的通知](https://yjsc.hitwh.edu.cn/2024/0805/c934a185979/page.htm)
 
+> [哈尔滨工业大学（深圳）关于接收 2025年推免生（含直博生）工作的通知](https://yzb.hitsz.edu.cn/yzs_common/zsxxxq/index?id=9583acaddb384fc4b31eced3a39df7be&xxlm=04)
+
 ~~【截止日期：8.6 18：00】[郑州研究院](https://zri.hit.edu.cn/2024/0726/c17214a349299/page.htm)~~
 
-【截止日期：8.8】[苏州研究院](https://sri.hit.edu.cn/2024/0724/c17245a349213/page.htm)
+~~【截止日期：8.8】[苏州研究院](https://sri.hit.edu.cn/2024/0724/c17245a349213/page.htm)~~
 
 【截止日期：8.25 17：00】[计算学部](https://computing.hit.edu.cn/2024/0729/c11271a349512/page.htm)
 
@@ -105,7 +109,7 @@
 
 ## 空军工程大学
 
-【截止日期：8.8 18：00】[空军工程大学2025年直接选拔招录入伍攻读硕士研究生预报名通知](https://www.afeu.cn:1001/notice-announcement/462/)
+~~【截止日期：8.8 18：00】[空军工程大学2025年直接选拔招录入伍攻读硕士研究生预报名通知](https://www.afeu.cn:1001/notice-announcement/462/)~~
 
 ## 海军工程大学
 
@@ -117,7 +121,7 @@
 
 ## 北京师范大学
 
-【报名截止：8.11】[人工智能学院](https://ai.bnu.edu.cn/ggjxz/tzgg/272ed4fa3c314ff287da4425cf5a8f4e.htm)
+~~【报名截止：8.11】[人工智能学院](https://ai.bnu.edu.cn/ggjxz/tzgg/272ed4fa3c314ff287da4425cf5a8f4e.htm)~~
 
 ## 中国科学院
 
@@ -146,6 +150,10 @@
 【截止日期：9.15】[佐治亚理工深圳学院](https://mp.weixin.qq.com/s/GRJqGWLVIp_jkSW--dh7jg)
 
 【截止日期：9.5 24:00】[ “国优计划”专项](https://cic.tju.edu.cn/info/1041/5013.htm)
+
+## 中国航空工业集团公司西安飞行自动控制研究所
+
+> [中国航空工业集团公司西安飞行自动控制研究所2025 年硕士研究生预推免开放日活动公告](https://mp.weixin.qq.com/s/fgszexKIliZSSVGMWN4gfA)
 
 ## 国防科技大学
 
@@ -193,7 +201,7 @@
 
 ## 南京邮电大学
 
-【报名截止：8.8】[自动化学院、人工智能学院](https://coa.njupt.edu.cn/2024/0701/c2277a267160/page.htm)
+~~【报名截止：8.8】[自动化学院、人工智能学院](https://coa.njupt.edu.cn/2024/0701/c2277a267160/page.htm)~~
 
 ~~【报名截止：7.19】[物联网学院](https://ciot.njupt.edu.cn/2024/0709/c10653a267656/page.htm)~~
 
@@ -243,6 +251,8 @@
 > [北京科技大学各培养单位接收2025年推荐免试硕士研究生（含直博生）预报名活动通知汇总](https://yzxc.ustb.edu.cn/xlytm/hdap/0b8e3ab055724b2eb002f7105c7e722f.htm)
 
 【报名截止：8.30 17:00】[智能科学与技术学院](https://ai.ustb.edu.cn/xwgg/tzgg/908112fddf1441dbb189557b9b768cfe.htm)
+
+【报名截止：8.30 23:59】[计算机与通信工程学院](https://scce.ustb.edu.cn/xinwentongzhi/tongzhigonggao/2024-08-10/2093.html)
 
 ## 西安建筑科技大学
 
