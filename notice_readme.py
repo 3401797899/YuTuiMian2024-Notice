@@ -76,11 +76,10 @@ def generate_readme_changes(added_contents):
     websites = []
     
     for r in result:
-        p = f'【报名截止：{r[0]}】{r[1]}[{r[2]}]({r[3]})'.replace('(','\(').replace(')','\)').replace('[','\[').replace(']','\]').replace('.','\.')
         # 不提醒过期的
         if r[-1] == '~':
             continue
-        p = f'【报名截止：{r[0]}】{r[1]}[{r[2]}]({r[3]})'.replace('(','\\(').replace(')','\\)').replace('[','\\[').replace(']','\\]').replace('.','\\.')
+        p = f'【报名截止：{r[0]}】{r[1]}[{r[2]}]({r[3]})'.replace('(','\\(').replace(')','\\)').replace('[','\\[').replace(']','\\]').replace('.','\\.').replace('?', '\\?')
         target_start = re.search(p, text).start()
         school_pattern = r'## (.*?)\n'
         schools = list(re.finditer(school_pattern, text))
