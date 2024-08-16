@@ -53,7 +53,7 @@ def create_html_table(names, institutes, deadlines, websites):
 def get_added_content(file_path):
     # 执行 git diff 命令获取最新 commit 的变动
     result = subprocess.run(
-        ['git', 'diff', '-U0', 'HEAD~1..HEAD', '--', file_path],
+        ['git', 'diff', '-U1', 'HEAD~1..HEAD', '--', file_path],
         capture_output=True,
         text=True,
         check=True
@@ -72,7 +72,8 @@ def get_added_content(file_path):
             add_line_count = int(rep[1])
             delete_line_count = int(rep[3])
             if add_line_count == delete_line_count:
-                i += (add_line_count + delete_line_count)
+                content_length = (add_line_count - delete_line_count + 1) * 2 + 2
+                i += content_length - 1
             continue
         add_lines += line
         
