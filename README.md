@@ -41,6 +41,8 @@
 
 【报名截止：9.2】[集成电路学院集成电路创新博士班](https://yzbm.tsinghua.edu.cn/publish/s03/s0302/detail/1aceebfd-9c92-4d8a-aee9-9ec90a754f1a?yxsdm=026)
 
+【报名截止：9.2】[计算机科学与技术系2025年博士生招生简章](https://yzbm.tsinghua.edu.cn/publish/s03/s0302/detail/fecbbbab-fdde-4e21-9652-322c7a68b87d?yxsdm=024)
+
 【报名截止：N/A】 [智能产业研究院](https://mp.weixin.qq.com/s/sHhcErP2b-aKcBNsRHugWg)
 
 > 是否有招生名额请联系老师
@@ -200,7 +202,7 @@
 
 >[天津大学夏令营信息](https://yzb.tju.edu.cn/xwzx/zxxx/202406/t20240605_323809.htm)
 
-【报名截止：8.20】[智能与计算学部导师团](https://cic.tju.edu.cn/info/1041/4999.htm)
+~~【报名截止：8.20】[智能与计算学部导师团](https://cic.tju.edu.cn/info/1041/4999.htm)~~
 
 【截止日期：8.30】[天津大学2025级卓越工程师导师团报名须知](http://yzb.tju.edu.cn/xwzx/zxxx/202408/t20240807_323857.htm)
 
