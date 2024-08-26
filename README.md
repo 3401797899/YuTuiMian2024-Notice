@@ -18,6 +18,8 @@
 > [清华大学2025年接收优秀应届本科毕业生免试攻读研究生报名通知(2024年8月23日12:00开放，2024年9月2日12:00关闭)](https://yz.tsinghua.edu.cn/info/1008/2796.htm)
 >
 > [清华大学2025年各院系博士生招生简章](https://yz.tsinghua.edu.cn/info/1024/2809.htm)
+>
+> [清华大学深圳国际研究生院2025年硕士研究生招生专业目录（推免）](https://www.sigs.tsinghua.edu.cn/2024/0823/c118a95819/page.htm)
 
 【报名截止：9.2】[高等研究院2025年博士生招生简章](https://yzbm.tsinghua.edu.cn/publish/s03/s0302/detail/4f1410c8-5e05-4d93-931b-a85aca0f026d?yxsdm=048)
 
@@ -49,9 +51,11 @@
 
 【报名截止：9.2】[清华大学-南方科技大学联合培养博士专项计划2025年博士生招生简章](https://yzbm.tsinghua.edu.cn/publish/s03/s0302/detail/ed76b438-d3a6-4103-b387-4ac778c2c426?yxsdm=599)
 
-【报名截止：N/A】 [智能产业研究院](https://mp.weixin.qq.com/s/sHhcErP2b-aKcBNsRHugWg)
+【报名截止：9.2】[清华大学2025年全国重点实验室工程博士研究生项目招生简章](https://mp.weixin.qq.com/s/stCPMyOkN7_AVrQDuetcfA)
 
-> 是否有招生名额请联系老师
+【报名截止：9.2】[清华大学SIGS-IMDT（深圳国际研究生院互动媒体设计与设计中心）](https://mp.weixin.qq.com/s/n5tiL8NA71YN6UoOJkmV4w)
+
+【报名截止：9.2】[清华大学深圳国际研究生院](https://www.sigs.tsinghua.edu.cn/2024/0823/c118a95817/page.htm)
 
 ## 上海交通大学
 
@@ -86,12 +90,14 @@
 > [哈尔滨工业大学（深圳）关于接收 2025年推免生（含直博生）工作的通知](https://yzb.hitsz.edu.cn/yzs_common/zsxxxq/index?id=9583acaddb384fc4b31eced3a39df7be&xxlm=04)
 
 > [哈尔滨工业大学交通科学与工程学院2025年推免生（含直博生）接收工作细则](https://jtxy.hit.edu.cn/2024/0813/c6085a350981/page.htm)
+>
+> [哈尔滨工业大学（深圳）电子与信息工程学院2025年推免生（含直博生）接收工作细则](http://eie.hitsz.edu.cn/info/1007/2631.htm)
 
 ~~【截止日期：8.6 18：00】[郑州研究院](https://zri.hit.edu.cn/2024/0726/c17214a349299/page.htm)~~
 
 ~~【截止日期：8.8】[苏州研究院](https://sri.hit.edu.cn/2024/0724/c17245a349213/page.htm)~~
 
-【截止日期：8.25 17：00】[计算学部](https://computing.hit.edu.cn/2024/0729/c11271a349512/page.htm)
+~~【截止日期：8.25 17：00】[计算学部](https://computing.hit.edu.cn/2024/0729/c11271a349512/page.htm)~~
 
 【截止日期：9.9】[计算机科学与技术学院（深圳）](http://cs.hitsz.edu.cn/info/1029/7452.htm)
 
@@ -114,6 +120,10 @@
 【截止日期：9.8 23：59】[智能科学与技术学院](https://is.nju.edu.cn/cc/fe/c57160a707838/page.htm)
 
 【截止日期：9.3】[匡亚明学院2024年暑期学校第二轮面试报名](https://dii.nju.edu.cn/d2/25/c11317a709157/page.htm)
+
+## 复旦大学
+
+【截止日期：9月2日16:00】[工程硕博士培养改革专项](https://gsao.fudan.edu.cn/83/15/c15014a688917/page.htm)
 
 ## 北京航空航天大学
 
@@ -313,6 +323,8 @@
 【报名截止：8.31】[国家材料服役安全科学中心](https://ncms.ustb.edu.cn/rcpy/tzgg/e479005126814dcb8ace6b822f592d79.htm)
 
 【报名截止：8.28】[顺德创新学院](https://sd.ustb.edu.cn/tzgg/d86e101480c9471281da8ce5ba9aca29.htm)
+
+【报名截止：8.30】[前沿交叉科学技术研究院](https://qy.ustb.edu.cn/tzgg/cdf07f88e1864b6d95aab2babb19d573.htm)
 
 ## 东南大学
 
