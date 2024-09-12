@@ -97,7 +97,7 @@ if __name__ == '__main__':
     # 发送邮件
     try:
         yag.send(
-            to=["baitime@foxmail.com","1328273623@qq.com"],
+            to=["baitime@foxmail.com","1328273623@qq.com","2312936963@qq.com"],
             subject="预推免院校新增 -- 来自BoardCaster数据库",
             contents=content.replace('\n','')
         )
